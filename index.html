@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Huzur Bahçesi: Zikir & Tesbih, Gül Atma ve Zen Baloncuk — Google Play</title>
+  <meta name="description" content="%100 internetsiz, reklamsız Kur'an merkezli Zikir & Tesbih, Gül Atma Ustası ve Zen Baloncuk 3'ü 1 arada huzur paketi. Google Play'de sadece 5 TL." />
+  <link rel="icon" type="image/png" href="img/icon.png" />
+  <meta name="theme-color" content="#0E292E" />
+  <style>
+    :root {
+      --bg-deep: #07171A;
+      --bg-card: #0E292E;
+      --gold: #E6C365;
+      --mint: #48C9B0;
+      --text-main: #F3F8F8;
+      --text-muted: #A9C2C6;
+      --border-gold: rgba(230, 195, 101, 0.28);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: radial-gradient(circle at 50% 0%, #133A41 0%, var(--bg-deep) 65%);
+      color: var(--text-main);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    a { color: var(--gold); text-decoration: none; }
+    header {
+      border-bottom: 1px solid var(--border-gold);
+      background: rgba(7, 23, 26, 0.85);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-container {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--gold);
+    }
+    .brand img {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      border: 1.5px solid var(--gold);
+    }
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      font-size: 0.95rem;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .btn-play-sm {
+      background: linear-gradient(135deg, var(--gold), #C89D3C);
+      color: #07171A !important;
+      font-weight: 800;
+      padding: 8px 18px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+    }
+
+    /* Hero */
+    .hero {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 52px 20px 36px;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 36px;
+      align-items: center;
+    }
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(72, 201, 176, 0.14);
+      border: 1px solid var(--mint);
+      color: var(--mint);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.18;
+      color: var(--gold);
+      margin-bottom: 16px;
+      font-family: Georgia, 'Times New Roman', serif;
+    }
+    .hero p.lead {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 26px;
+    }
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 22px;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, var(--gold), #C69A35);
+      color: #07171A;
+      font-weight: 800;
+      padding: 16px 28px;
+      border-radius: 14px;
+      font-size: 1.08rem;
+      box-shadow: 0 10px 28px rgba(230, 195, 101, 0.25);
+      transition: transform 0.18s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); }
+    .price-tag {
+      background: #07171A;
+      color: var(--gold);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.98rem;
+      font-weight: 800;
+      border: 1px solid var(--gold);
+    }
+    .meta-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .hero-card {
+      background: var(--bg-card);
+      border: 1.5px solid var(--border-gold);
+      border-radius: 22px;
+      padding: 14px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+    }
+    .hero-card img {
+      width: 100%;
+      border-radius: 14px;
+      display: block;
+    }
+
+    /* Sections */
+    .section {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .section-header h2 {
+      font-size: 2rem;
+      color: var(--gold);
+      font-family: Georgia, serif;
+      margin-bottom: 8px;
+    }
+    .section-header p {
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* 3 Modules Grid */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 22px;
+    }
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: 18px;
+      padding: 24px;
+    }
+    .feature-card h3 {
+      color: var(--gold);
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+    .feature-card p {
+      color: var(--text-muted);
+      font-size: 0.96rem;
+      margin-bottom: 14px;
+    }
+    .feature-card ul {
+      list-style: none;
+      color: var(--text-main);
+      font-size: 0.92rem;
+    }
+    .feature-card ul li {
+      margin-bottom: 7px;
+      padding-left: 18px;
+      position: relative;
+    }
+    .feature-card ul li::before {
+      content: "•";
+      color: var(--mint);
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+
+    /* Screenshots */
+    .screens-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+    .screen-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: 18px;
+      padding: 10px;
+      text-align: center;
+    }
+    .screen-item img {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-gold);
+      margin-top: 50px;
+      padding: 32px 20px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+    footer .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 860px) {
+      .hero { grid-template-columns: 1fr; text-align: center; }
+      .cta-row, .meta-tags { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <img src="img/icon.png" alt="Huzur Bahçesi İkon" />
+        <span>Huzur Bahçesi</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#ozellikler">Özellikler</a>
+        <a href="#ekranlar">Ekran Görüntüleri</a>
+        <a href="privacy.html">Gizlilik Politikası</a>
+        <a href="https://play.google.com/store/apps/details?id=com.huzurbahcesi.oyun" class="btn-play-sm">Google Play • 5 ₺</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <div class="badge-pill">✓ %100 ÇEVRİMDİŞİ • REKLAMSIZ • VERİ TOPLAMAZ</div>
+      <h1>Kalpler Allah’ı Anmakla Huzur Bulur</h1>
+      <p class="lead">
+        Kur'an-ı Kerim merkezli <strong>Zikir & Tesbih</strong>, <strong>33'lük Pop-It</strong>, <strong>Gül Atma Ustası</strong> ve <strong>Zen Baloncuk & Nilüfer</strong> deneyimi tek bir reklamsız, internetsiz tam sürüm pakette.
+      </p>
+      <div class="cta-row">
+        <a href="https://play.google.com/store/apps/details?id=com.huzurbahcesi.oyun" class="btn-primary">
+          <span>▶ Google Play'den İndir</span>
+          <span class="price-tag">5,00 ₺</span>
+        </a>
+      </div>
+      <div class="meta-tags">
+        <span>💎 Tek Seferlik Ödeme (Abonelik Yok)</span>
+        <span>🚫 Sıfır Reklam & Sıfır Uygulama İçi Satış</span>
+        <span>🤖 Android 8.0 – Android 15</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img src="img/feature.png" alt="Huzur Bahçesi Özellik Grafiği" />
+    </div>
+  </section>
+
+  <section id="ozellikler" class="section">
+    <div class="section-header">
+      <h2>3'ü 1 Arada Huzur Paketi</h2>
+      <p>Tek kurulumla hem manevi zikir ve tesbih halkası hem de zihni dinlendiren iki özel oyun.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="feature-card">
+        <h3>🌿 1. Zikir & Tesbih Bahçesi</h3>
+        <p>Ra'd Suresi 28. ayet rehberliğinde Kur'an-ı Kerim kaynaklı zikir ve dualar.</p>
+        <ul>
+          <li>Arapça hat, Türkçe okunuş, meal ve sure/ayet kaynağı</li>
+          <li>Her 33 çekimde özel dokunsal titreşim ve su/ney tınısı</li>
+          <li>33'lük Pop-It Tesbih ve Nur Damlaları mini modu</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <h3>🌹 2. Gül Atma Ustası</h3>
+        <p>Hareketli hedeflere gül fırlatarak seri kombo topladığınız refleks oyunu.</p>
+        <ul>
+          <li>Parmak sürükleyerek hassas nişan alma</li>
+          <li>Altın kalpleri vurarak +3 saniye ekstra süre kazanma</li>
+          <li>Dikenli toplardan kaçınma ve yüksek rekor takibi</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <h3>🫧 3. Zen Baloncuk & Nilüfer</h3>
+        <p>Yumuşak akortlu su ve zil sesleri eşliğinde zihni dinlendiren zen deneyimi.</p>
+        <ul>
+          <li>Sınırsız seviye ilerlemesi ve yumuşak renk geçişleri</li>
+          <li>Gerçek zamanlı WebAudio huzur frekansları</li>
+          <li>Uçak modunda dahi %100 çevrimdışı çalışma</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="ekranlar" class="section">
+    <div class="section-header">
+      <h2>Uygulama Ekran Görüntüleri</h2>
+      <p>Google Play tam sürüm (v2.0.0) arayüzünden kareler.</p>
+    </div>
+    <div class="screens-grid">
+      <div class="screen-item"><img src="img/screen1.png" alt="Ana Lobi ve Rozetler" /></div>
+      <div class="screen-item"><img src="img/screen2.png" alt="Huzur Zikir ve Tesbih" /></div>
+      <div class="screen-item"><img src="img/screen3.png" alt="Gül Atma Ustası" /></div>
+      <div class="screen-item"><img src="img/screen4.png" alt="Zen Baloncuk ve Nilüfer" /></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="privacy.html">Gizlilik Politikası (Privacy Policy)</a>
+      <a href="https://play.google.com/store/apps/details?id=com.huzurbahcesi.oyun">Google Play (5,00 ₺)</a>
+    </div>
+    <p>© 2026 Huzur Bahçesi (com.huzurbahcesi.oyun) • Geliştirici: Murat Çelik • Tüm Hakları Saklıdır.</p>
+  </footer>
+
+</body>
+</html>
