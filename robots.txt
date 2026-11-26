@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://celikmrt324-crypto.github.io/sitemap.xml

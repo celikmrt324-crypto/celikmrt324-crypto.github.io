@@ -3,20 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Huzur Bahçesi: Zikir & Tesbih, Gül Atma ve Zen Baloncuk — Google Play</title>
-  <meta name="description" content="%100 internetsiz, reklamsız Kur'an merkezli Zikir & Tesbih, Gül Atma Ustası ve Zen Baloncuk 3'ü 1 arada huzur paketi. Google Play'de lansmana özel 19,99 TL." />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>Huzur Bahçesi: Zikir &amp; Tesbih, Gül Atma ve Zen Baloncuk — Google Play</title>
+  <meta name="description" content="%100 internetsiz, reklamsız Kur'an merkezli Zikir &amp; Tesbih, Gül Atma Ustası ve Zen Baloncuk 3'ü 1 arada huzur paketi. Google Play'de lansmana özel 19,99 TL." />
+  <link rel="canonical" href="https://celikmrt324-crypto.github.io/" />
+  <meta property="og:title" content="Huzur Bahçesi — Zikir &amp; Tesbih, Gül Atma ve Zen Baloncuk (Google Play)" />
+  <meta property="og:description" content="%100 çevrimdışı, sıfır reklam ve sıfır veri toplama garantili 3'ü 1 arada Kur'an merkezli Zikir &amp; Tesbih, Gül Atma Ustası ve Zen Baloncuk paketi." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://celikmrt324-crypto.github.io/" />
+  <meta property="og:image" content="https://celikmrt324-crypto.github.io/img/feature.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Huzur Bahçesi: Zikir & Tesbih, Gül Atma ve Zen Baloncuk",
+    "operatingSystem": "Android 8.0+",
+    "applicationCategory": "LifestyleApplication",
+    "description": "%100 internetsiz, reklamsız Kur'an merkezli Zikir & Tesbih, Gül Atma Ustası ve Zen Baloncuk 3'ü 1 arada huzur paketi.",
+    "url": "https://celikmrt324-crypto.github.io/",
+    "installUrl": "https://play.google.com/store/apps/details?id=com.huzurbahcesi.oyun",
+    "image": "https://celikmrt324-crypto.github.io/img/feature.png",
+    "author": {
+      "@type": "Person",
+      "name": "Murat Çelik"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "19.99",
+      "priceCurrency": "TRY",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
   <link rel="icon" type="image/png" href="img/icon.png" />
   <meta name="theme-color" content="#0E292E" />
   <style>
     :root {
       --bg-deep: #07171A;
       --bg-card: #0E292E;
+      --bg-header: rgba(7, 23, 26, 0.88);
       --gold: #E6C365;
       --mint: #48C9B0;
       --text-main: #F3F8F8;
       --text-muted: #A9C2C6;
       --border-gold: rgba(230, 195, 101, 0.28);
     }
+    :root[data-theme="light"] {
+      --bg-deep: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-header: rgba(255, 255, 255, 0.92);
+      --gold: #92600e;
+      --mint: #0f766e;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --border-gold: rgba(146, 96, 14, 0.24);
+    }
+    .skip-link {
+      position: absolute; left: -9999px; top: 8px;
+      background: #ffffff; color: #0f172a; padding: 8px 14px; border-radius: 8px; font-weight: 700; z-index: 200;
+    }
+    .skip-link:focus { left: 12px; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -24,11 +71,15 @@
       color: var(--text-main);
       line-height: 1.6;
       min-height: 100vh;
+      overflow-x: hidden;
+    }
+    :root[data-theme="light"] body {
+      background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
     }
     a { color: var(--gold); text-decoration: none; }
     header {
       border-bottom: 1px solid var(--border-gold);
-      background: rgba(7, 23, 26, 0.85);
+      background: var(--bg-header);
       backdrop-filter: blur(12px);
       position: sticky;
       top: 0;
@@ -267,22 +318,25 @@
   </style>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">İçeriğe geç</a>
 
   <header>
     <div class="nav-container">
-      <a href="#" class="brand">
+      <a href="./" class="brand">
         <img src="img/icon.png" alt="Huzur Bahçesi İkon" />
         <span>Huzur Bahçesi</span>
       </a>
-      <nav class="nav-links">
+      <nav class="nav-links" style="flex-wrap: wrap;">
         <a href="#ozellikler">Özellikler</a>
         <a href="#ekranlar">Ekran Görüntüleri</a>
         <a href="privacy.html">Gizlilik Politikası</a>
-        <a href="https://play.google.com/store/apps/details?id=com.huzurbahcesi.oyun" class="btn-play-sm">Google Play • 19,99 ₺</a>
+        <button type="button" onclick="document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light'" aria-label="Tema değiştir" style="background:transparent;border:1px solid var(--border-gold);color:var(--gold);padding:6px 12px;border-radius:999px;cursor:pointer;font-weight:700;">☀/🌙</button>
+        <a href="https://play.google.com/store/apps/details?id=com.huzurbahcesi.oyun" class="btn-play-sm" style="color:#ffffff !important; background: linear-gradient(135deg, #b47d1c, #8c5c0a);">Google Play • 19,99 ₺</a>
       </nav>
     </div>
   </header>
 
+  <main id="main-content">
   <section class="hero">
     <div>
       <div class="badge-pill">✓ %100 ÇEVRİMDİŞİ • REKLAMSIZ • VERİ TOPLAMAZ</div>
@@ -355,6 +409,7 @@
       <div class="screen-item"><img src="img/screen4.png" alt="Zen Baloncuk ve Nilüfer" /></div>
     </div>
   </section>
+  </main>
 
   <footer>
     <div class="footer-links">
